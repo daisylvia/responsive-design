@@ -1,0 +1,190 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url(images/bg-intro-mobile.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: #ff7a7a;
+}
+
+main {
+  margin: 2rem auto;
+  width: 90%;
+  height: auto;
+  display: grid;
+  grid-template-rows: 50rem, auto;
+}
+main .container-left {
+  margin: 4rem;
+}
+main .container-left h1, main .container-left p {
+  text-align: center;
+  color: white;
+}
+main .container-left h1 {
+  margin-top: 2rem;
+  font-size: 4rem;
+  font-weight: 600;
+}
+main .container-left p {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+}
+main .container-right .container-tryFree {
+  background-color: #6055a5;
+  height: 10rem;
+  border-radius: 1rem;
+  display: grid;
+  place-items: center;
+  box-shadow: 0rem 1rem 0rem rgba(64, 61, 82, 0.315);
+}
+main .container-right .container-tryFree:hover {
+  transition: opacity 0.2s;
+  opacity: 0.8;
+}
+main .container-right .container-tryFree h2 {
+  text-align: center;
+  color: white;
+}
+main .container-right .container-tryFree h2 span {
+  font-weight: 200;
+}
+main .container-right .container-form {
+  background-color: white;
+  height: auto;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0rem 1rem 0rem rgba(64, 61, 82, 0.315);
+  position: relative;
+}
+main .container-right .container-form form {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin: 0rem auto;
+  width: 90%;
+}
+main .container-right .container-form form .cont-input {
+  position: relative;
+  margin-top: 2.5rem;
+  border: 1px solid #b9b6d3;
+  border-radius: 0.5rem;
+}
+main .container-right .container-form form .cont-input .input {
+  border-radius: none;
+  border: none;
+  height: 6rem;
+  width: 100%;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+main .container-right .container-form form .cont-input .input::placeholder {
+  font-size: 1.4rem;
+  padding-left: 3rem;
+  font-weight: 800;
+}
+main .container-right .container-form form .cont-input .input:focus {
+  outline: none;
+}
+main .container-right .container-form form .cont-input .icon-error {
+  display: none;
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  right: 5vh;
+  top: 2vh;
+}
+main .container-right .container-form form .text-err {
+  display: none;
+  margin: 1rem 0 0 0;
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: #ff7a7a;
+  height: 1rem;
+  text-align: end;
+}
+main .container-right .container-form form button {
+  display: grid;
+  place-items: center;
+  border-radius: 0.6rem;
+  margin-top: 2.5rem;
+  text-transform: uppercase;
+  background-color: #38cc8c;
+  color: white;
+  font-size: 1.7rem;
+  border: none;
+  padding: 2rem 1rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  box-shadow: 0rem 0.5rem 0rem #04b304;
+  cursor: pointer;
+}
+main .container-right .container-form form button:hover {
+  transition: opacity 0.2s;
+  opacity: 0.8;
+}
+main .container-right .container-form form p {
+  text-align: center;
+  margin-top: 2.5rem;
+  color: #b9b6d3;
+  font-weight: 200;
+  font-size: 1.4rem;
+  padding-bottom: 3rem;
+}
+main .container-right .container-form form p span {
+  color: #ff7a7a;
+  font-weight: 800;
+}
+main .container-right .container-form form p span:hover {
+  transition: opacity 0.1s;
+  opacity: 0.8;
+}
+
+@media screen and (min-width: 70rem) {
+  body {
+    background-image: url(images/bg-intro-desktop.png);
+  }
+
+  main {
+    margin: 7% auto;
+    width: 70%;
+    grid-template-areas: "contL contR";
+    grid-template-rows: 0, 0;
+    grid-template-columns: 1fr 1fr;
+  }
+  main .container-left {
+    grid-area: contL;
+    margin: 0rem;
+    margin: 15rem 0;
+  }
+  main .container-left h1,
+main .container-left p {
+    text-align: start;
+  }
+  main .container-left h1 {
+    margin-top: 0;
+    font-size: 5rem;
+    font-weight: 800;
+  }
+  main .container-left p {
+    font-size: 1.6rem;
+  }
+  main .container-right {
+    grid-area: contR;
+  }
+  main .container-right .container-tryFree {
+    height: 7rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
